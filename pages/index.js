@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Dev Integral - Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -45,6 +46,11 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <Link href="/posts/first-post">
+            <a  className="card">
+              <h3>Read First Post</h3>
+            </a>
+          </Link>
         </div>
       </main>
 
